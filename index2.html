@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Web-demo3</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    </head>
+    <body>
+        <div>
+            <div class="side-nav">
+                <ul>
+                    <li><a href="index.html" class="a"><i class="bi bi-house"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61551646509754" class="a"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/apads.werbung/" class="a"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <section id ="nhat" class="sub-dau">
+            <nav>
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navlinks">
+                   <i class="bi bi-x" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html" class="a">TRANG CHỦ</a></li>
+                        <li><a href="" class="a">SẢN PHẨM MỚI NHẤT</a></li>
+                        <li><a href="index2.html" class="a">VỀ CHÚNG TÔI</a></li>
+                        <li><a href="index3.html" class="a">LIÊN HỆ</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61551646509754" class="a"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/apads.werbung/" class="a"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="a">VỀ CHÚNG TÔI</h1>
+        </section>
+        <!--about us content-->
+        <sesction call="us">
+            <div class="row">
+                <div class="us-col">
+                  <h1 class="a">Nice To Meet You !</h1>
+                  <p class="a">Chào quý khách hàng thân yêu,<br><br>
+
+                    Chúng tôi tự hào giới thiệu đội ngũ Thiết Kế Logo Quảng Cáo Thương Hiệu của chúng tôi, một đội ngũ tài năng với hơn 5 năm kinh nghiệm trong lĩnh vực này. Với sứ mệnh tạo ra những hình ảnh độc đáo và gắn kết cho thương hiệu của bạn, chúng tôi đã xây dựng một danh tiếng vững chắc trong ngành thiết kế đồ họa.<br><br>
+
+                    Sự đa dạng và sáng tạo là tâm huyết của chúng tôi. Với mỗi dự án, chúng tôi đảm bảo tạo ra các logo thương hiệu ấn tượng, phản ánh đúng bản sắc và giá trị cốt lõi của doanh nghiệp. Chúng tôi hiểu rằng một logo không chỉ là một hình ảnh, mà là một tuyên ngôn, một cái gắn kết với khách hàng và một biểu tượng định danh mạnh mẽ.
+                    </p>
+                  <a href="https://www.instagram.com/apads.werbung/" class="hero-btn red-btn">XEM THÊM</a>
+                </div>
+                <div class="us-col">
+                  <img src="./image/us2.jpg">
+                </div>
+            </div>
+        </sesction>
+        <!--our team-->
+
+
+        <!--what u will get-->
+
+        <!--campus-->
+
+        <!--we also have-->
+
+        <!--footer-->
+        <section class="us">
+            <h4 class="a">About Us</h4>
+            <p class="a">Mọi thắc mắc xin vui lòng liên hệ với chúng tôi qua các trang mạng xã hội bên dưới</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=61551646509754"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/apads.werbung/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+            </div>
+            <p>Make with <i class="bi bi-heart"> by APAds</i></p>
+        </section>
+        <script>
+            let nav = document.getElementById("navlinks");
+
+            function showMenu() {
+                nav.style.right ="0";
+            }
+            function hideMenu() {
+                nav.style.right ="-200px";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/dd9af7210e.js" crossorigin="anonymous"></script>
+    </body>
+</html>

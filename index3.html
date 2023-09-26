@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Web-demo3</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    </head>
+    <body>
+        <div>
+            <div class="side-nav">
+                <ul>
+                    <li><a href="index.html" class="a"><i class="bi bi-house"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61551646509754" class="a"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/apads.werbung/" class="a"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <section id ="nhat" class="sub-dau1">
+            <nav>
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navlinks">
+                   <i class="bi bi-x" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html" class="a">TRANG CHỦ</a></li>
+                        <li><a href="" class="a">SẢN PHẨM MỚI NHẤT</a></li>
+                        <li><a href="index2.html" class="a">VỀ CHÚNG TÔI</a></li>
+                        <li><a href="index3.html" class="a">LIÊN HỆ</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61551646509754" class="a"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/apads.werbung/" class="a"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="a">LIÊN HỆ</h1>
+        </section>
+        <!--about us content-->
+        <section class="location">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14902.763589945986!2d105.86221921249542!3d20.964924777966694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac297da086a3%3A0xd23101b0c6c61fe2!2zWcOqbiBT4bufLCBIb8OgbmcgTWFpLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1695728479433!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="bi bi-house"></i>
+                        <span>
+                            <h5 class="a">Đường Tam Trinh, Số 126A13</h5>
+                            <p class="a">Yên Sở, Hoàng Mai, Hà Nội</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="bi bi-telephone"></i>
+                        <span>
+                            <h5 class="a">+84 866690714</h5>
+                            <p class="a">Thứ 2 đến Thứ 7, 10AM đến 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                        <span>
+                            <h5 class="a">apads8888@gmail.com</h5>
+                            <p class="a">Gửi mail cho chúng tôi nếu có thắc mắc</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col ">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" class="a" placeholder="Nhập Tên Của Bạn" required>
+                        <input type="email" name="email" class="a" placeholder="Nhập Email Của Bạn" required>
+                        <textarea rows="8" name="message" class="a" placeholder="Tin Nhắn Đến Chúng Tôi" required></textarea>
+                        <button type="submit" class="hero-btn red-btn a">Gửi Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--footer---->
+        <section class="us">
+            <h4 class="a">About Us</h4>
+            <p class="a">Mọi thắc mắc xin vui lòng liên hệ với chúng tôi qua các trang mạng xã hội bên dưới</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=61551646509754"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/apads.werbung/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+            </div>
+            <p class="a">Make with <i class="bi bi-heart"> by APAds</i></p>
+        </section>
+        <script>
+            let nav = document.getElementById("navlinks");
+
+            function showMenu() {
+                nav.style.right ="0";
+            }
+            function hideMenu() {
+                nav.style.right ="-200px";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/dd9af7210e.js" crossorigin="anonymous"></script>
+    </body>
+</html>
